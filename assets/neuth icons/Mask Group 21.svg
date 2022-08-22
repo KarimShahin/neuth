@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1560" data-name="Rectangle 1560" width="24" height="24" transform="translate(-1850 8059)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_21" data-name="Mask Group 21" transform="translate(1850 -8059)" clip-path="url(#clip-path)">
+    <g id="svgexport-10_28_" data-name="svgexport-10 (28)" transform="translate(-1850.5 8059)">
+      <g id="Group_8884" data-name="Group 8884">
+        <path id="Path_57113" data-name="Path 57113" d="M11.612,2.065a4,4,0,1,0,4,4,4,4,0,0,0-4-4Zm-5,4a5,5,0,1,1,5,5,5,5,0,0,1-5-5Z" fill="red" fill-rule="evenodd"/>
+        <path id="Path_57114" data-name="Path 57114" d="M11.077,14.218a.5.5,0,0,1-.473.526,17.641,17.641,0,0,0-7.354,2.04.408.408,0,0,0-.216.36v3.672a.5.5,0,0,0,.5.5h7.044a.5.5,0,0,1,0,1H3.534a1.5,1.5,0,0,1-1.5-1.5V17.143A1.408,1.408,0,0,1,2.781,15.9a18.642,18.642,0,0,1,7.771-2.155.5.5,0,0,1,.526.473Z" fill="red" fill-rule="evenodd"/>
+        <path id="Path_57115" data-name="Path 57115" d="M19.965,12.255a2.4,2.4,0,0,0-1.806-.815H16.251a2.408,2.408,0,0,0-2.408,2.408v6.678a2.408,2.408,0,0,0,2.408,2.408h1.908a2.4,2.4,0,0,0,1.806-.815.5.5,0,1,0-.75-.662,1.4,1.4,0,0,1-1.056.477H16.251a1.408,1.408,0,0,1-1.408-1.408V13.849a1.408,1.408,0,0,1,1.408-1.408h1.908a1.4,1.4,0,0,1,1.056.477.5.5,0,1,0,.75-.662Z" fill="red" fill-rule="evenodd"/>
+        <path id="Path_57116" data-name="Path 57116" d="M22.82,16.834a.5.5,0,0,1,0,.707l-2,2a.5.5,0,0,1-.707-.707l2-2A.5.5,0,0,1,22.82,16.834Z" fill="red" fill-rule="evenodd"/>
+        <path id="Path_57117" data-name="Path 57117" d="M22.82,17.541a.5.5,0,0,0,0-.707l-2-2a.5.5,0,0,0-.707.707l2,2A.5.5,0,0,0,22.82,17.541Z" fill="red" fill-rule="evenodd"/>
+        <path id="Path_57118" data-name="Path 57118" d="M16.466,17.188a.5.5,0,0,1,.5-.5h5a.5.5,0,0,1,0,1h-5A.5.5,0,0,1,16.466,17.188Z" fill="red" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>
