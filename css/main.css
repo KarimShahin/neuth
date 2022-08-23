@@ -630,11 +630,15 @@ input {
 }
 
 .new-arrival__body {
+  width: 100%;
   display: none;
+  padding-inline: 8.5rem;
   position: relative;
 }
 
 .bundles__body {
+  width: 100%;
+  padding-inline: 8.5rem;
   display: none;
   position: relative;
 }
