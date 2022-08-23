@@ -7,6 +7,12 @@ const notificationCloseBtn = document.querySelector(".notification__close-btn");
 const accountMenu = document.querySelector(".login-menu");
 const tabs = Array(...document.querySelectorAll(".tab"));
 const tabsBody = Array(...document.querySelectorAll(".tab__body"))
+const videoPlayBtn = document.querySelector(".video__play__btn");
+const videoSrc = document.querySelector(".video__src");
+const video = document.querySelector(".video");
+const videoContent = document.querySelector(".video__content")
+const videoImages = Array(...document.querySelectorAll(".video__img"));
+
 const swiper = new Swiper('.swiper', {
   // Default parameters
   slidesPerView: 1,
@@ -135,9 +141,45 @@ function makeTabActive(e) {
   element.classList.add("active");
 }
 
+function playVideo(e) {
+  video.removeAttribute("loop")
+  videoContent.style.display = "none"
+  video.play();
+}
+
+function videoReset(e) {
+  video.removeAttribute("loop")
+  videoContent.style.display = "block"
+}
+
+function videoChange(e) {
+  console.log(e.target.classList[1])
+  if (e.target.classList[1] === "zero") {
+    video.pause()
+    videoSrc.setAttribute("src", "../assets/videos/WhatsApp Video 2022-08-07 at 6.40.33 PM (online-video-cutter.com).mp4")
+    playVideo()
+  } else if (e.target.classList[1] === "one") {
+    video.pause()
+    videoSrc.setAttribute("src","../assets/videos/WhatsApp Video 2022-08-07 at 6.40.33 PM (online-video-cutter.com).mp4")
+    playVideo()
+  } else if (e.target.classList[1] === "two") {
+    video.pause()
+    videoSrc.setAttribute("src", "../assets/videos/WhatsApp Video 2022-08-07 at 6.40.33 PM (online-video-cutter.com).mp4")
+    playVideo()
+  }
+}
+
 // page logic
 navbarTabs.map(tab => {
   tab.addEventListener("click",(e)=>toogleMenu(e,tab.firstChild.nextSibling))
+})
+
+tabs.map(tab => {
+  tab.addEventListener("click", (e) => makeTabActive(e))
+})
+
+videoImages.map(image => {
+  image.addEventListener("click",(e)=> videoChange(e))
 })
 
 notificationIcon.addEventListener("click", (e) => toogleNotification(e));
@@ -153,7 +195,5 @@ document.body.addEventListener("click", (e) => {
 })
 
 accountIcon.addEventListener("click", (e) => toogleAccount(e));
-
-tabs.map(tab => {
-  tab.addEventListener("click", (e) => makeTabActive(e))
-})
+videoPlayBtn.addEventListener("click", (e) => playVideo(e));
+video.addEventListener("ended", (e) => videoReset(e));
