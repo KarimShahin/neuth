@@ -258,7 +258,7 @@ input {
 .navbar__tab {
   position: relative;
   font-size: 1.125rem;
-  font-size: 700;
+  font-weight: 700;
   color: var(--font--primary--clr);
   cursor: pointer;
 }
@@ -416,6 +416,7 @@ input {
 .best-seller {
 	padding-block: 4rem;
 	padding-inline: 8.5rem;
+  position: relative;
 }
 
 .best-seller__header {
@@ -446,18 +447,55 @@ input {
 
 .swiper {
   width: 100%;
+  position: unset;
 }
 
 .swiper-wrapper {
+  position: unset;
 }
 
 .swiper-slide {
+  position: unset;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: var(--clr--primary);
+  background-color: var(--clr--primary);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: absolute;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* transform: translateX(4rem); */
+  /* z-index: 100; */
 } 
+
+.swiper-button-next {
+  right: 0;
+  transform: translateX(-3rem);
+}
+
+.swiper-button-prev {
+  left: 0;
+  transform: translateX(3rem);
+}
+
+.swiper-button-next::after {
+  position: absolute;
+  right: 50%;
+  transform: translateX(60%);
+  z-index: 100;
+}
+
+.swiper-button-prev::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-60%);
+  z-index: 100;
+}
 
 .best-seller__card {
   width: 100%;
@@ -559,13 +597,12 @@ input {
 /*********** tabs section *************/
 
 .tabs {
-  padding-inline: 8.5rem;
   margin-bottom: 4rem;
 }
 
 .tabs__container {
   list-style: none;
-  padding-left: none;
+  padding-inline: 8.5rem;
   display: flex;
   /* height: 100px; */
   justify-content: center;
@@ -581,16 +618,25 @@ input {
   border-bottom: 2px solid #F5F5F5;
 }
 
+.tabs__body {
+  width: 100%;
+}
+
 .offers__body {
+  width: 100%;
+  padding-inline: 8.5rem;
  display: none;
+ position: relative;
 }
 
 .new-arrival__body {
   display: none;
+  position: relative;
 }
 
 .bundles__body {
   display: none;
+  position: relative;
 }
 
 .active {
@@ -604,6 +650,7 @@ input {
 .featured-categories {
   padding-inline: 8.5rem;
   margin-bottom: 4rem;
+  position: relative;
 }
 
 .featured-categories__title {
