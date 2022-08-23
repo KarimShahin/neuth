@@ -263,6 +263,10 @@ input {
   cursor: pointer;
 }
 
+.active__tab {
+  color: var(--clr--primary);
+}
+
 .menu,
 .login-menu {
   position: absolute;

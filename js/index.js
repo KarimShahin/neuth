@@ -93,11 +93,14 @@ function toogleMenu(e, element) {
   e.stopPropagation()
   if (element.classList.contains("close")) {
     navbarTabs.map(tab => {
+      tab.classList.remove("active__tab")
       tab.firstChild.nextSibling.classList.remove("open");
       tab.firstChild.nextSibling.classList.add("close");
     })
+    e.target.classList.add("active__tab")
     element.classList.replace("close","open");
   } else if (element.classList.contains("open")) {
+    e.target.classList.remove("active__tab")
     element.classList.replace("open", "close");
   }
   
@@ -187,6 +190,7 @@ notificationCloseBtn.addEventListener("click", (e) => closeNotification(e));
 document.body.addEventListener("click", (e) => {
   e.stopPropagation();
   navbarTabs.map(tab => {
+    tab.classList.remove("active__tab")
     tab.firstChild.nextSibling.classList.remove("open")
     tab.firstChild.nextSibling.classList.add("close")
   })
