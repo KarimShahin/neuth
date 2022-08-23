@@ -1,8 +1,10 @@
 // variable declaration
 const navbarTabs = Array(...document.querySelectorAll(".navbar__tab"))
 const notificationIcon = document.querySelectorAll(".navbar__icon")[1];
+const accountIcon = document.querySelectorAll(".navbar__icon")[4];
 const notificationContent = document.querySelector(".notification__content");
 const notificationCloseBtn = document.querySelector(".notification__close-btn");
+const accountMenu = document.querySelector(".login-menu");
 const tabs = Array(...document.querySelectorAll(".tab"));
 const tabsBody = Array(...document.querySelectorAll(".tab__body"))
 const swiper = new Swiper('.swiper', {
@@ -109,6 +111,16 @@ function closeNotification(e) {
   notificationContent.style.display = "none";
   document.body.style.overflow = "auto"
 }
+function toogleAccount(e) {
+  e.stopPropagation()
+  if (accountMenu.classList.contains("close")) {
+    accountMenu.classList.remove("close");
+    accountMenu.classList.add("open");
+  } else if (accountMenu.classList.contains("open")){
+    accountMenu.classList.remove("open");
+    accountMenu.classList.add("close");
+  }
+}
 
 function makeTabActive(e) {
   tabs.map(tab => {
@@ -136,7 +148,11 @@ document.body.addEventListener("click", (e) => {
     tab.firstChild.nextSibling.classList.remove("open")
     tab.firstChild.nextSibling.classList.add("close")
   })
+  accountMenu.classList.remove("open");
+  accountMenu.classList.add("close");
 })
+
+accountIcon.addEventListener("click", (e) => toogleAccount(e));
 
 tabs.map(tab => {
   tab.addEventListener("click", (e) => makeTabActive(e))

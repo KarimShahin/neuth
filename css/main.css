@@ -178,12 +178,12 @@ input {
   cursor: pointer;
 }
 
-.menu {
+.menu,
+.login-menu {
   position: absolute;
   width: 130px;
   box-sizing: border-box;
   background-color: #fff;
-  transform:translateY(2rem);
   padding:1rem 0.5rem;
   border-radius: 5px;
   z-index: 1;
@@ -191,24 +191,36 @@ input {
   box-shadow: 0 0 5px 0px #00000022;
 }
 
-.menu::after {
+.menu {
+    transform: translateY(2rem);
+}
+
+.login-menu {
+  transform: translate(-4.5rem,11rem);
+  padding: 0;
+  margin: 0;
+  width: 150px;
+}
+
+.menu::after,
+.login-menu::after {
   content: "";
   position: absolute;
   width: 25px;
   aspect-ratio: 2/1;
   background-color: #fff;
-  left: 1rem;
   top: -0.75rem;
   clip-path: polygon(0% 100%,50% 0%,100% 100%);
   box-shadow: 0 0 5px 0px #00000022;
 }
 
-.open {
-  display: block;
+.menu::after {
+  left: 1rem;
 }
 
-.close {
-  display: none;
+.login-menu::after {
+  right: 1rem;
+  background-color: var(--clr--primary);
 }
 
 .menu__link {
@@ -219,6 +231,34 @@ input {
 
 .menu__link:last-child {
   margin-bottom: 0;
+}
+
+.login-menu__link {
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem;
+  text-align: left;
+  color: #000;
+}
+
+.my-profile-btn {
+  color: white;
+  background-color: var(--clr--primary);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.logout-btn {
+  border-top: 1px solid #E5E5E5;
+  color: #FF0000;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
 }
 
 /************ hero section ****************/
