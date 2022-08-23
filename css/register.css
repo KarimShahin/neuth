@@ -1,0 +1,167 @@
+/* :root {
+  --clr--primary: #008bc5;
+  --container--padding: 5rem;
+  --font--primary--clr: #404041;
+  --font--accent--clr: #767E7E;
+} */
+
+.register {
+  padding: 2rem 8.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.register__tabs {
+  display: flex;
+  align-items: stretch;
+  padding-left: 0;
+  list-style: none;
+}
+
+.register__tab {
+  font-family: "Montserrat",sans-serif;
+  width: 50%;
+  padding-block: 1rem;
+  border-bottom: 2px solid #F5F5F5;
+  font-size: 1.125rem;
+  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+  cursor: pointer;
+}
+
+.register__tab:last-child {
+  text-align: center;
+}
+
+
+.register__tabs__body {
+  width: 100%;
+  padding: 3rem 2rem;
+}
+
+.login__body,
+.signup__body {
+  width: 100%;
+  display: none;
+}
+
+.active {
+  display: flex;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--clr--primary);
+  border-bottom-color: var(--clr--primary);
+}
+
+.login__form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 10%;
+  gap: 1rem;
+}
+
+.signup__form {
+  width: 50%;
+  /* padding-block: 2rem; */
+  padding-inline: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.phone__container,
+.password__container,
+.name__container,
+.email__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  color: #9F9F9F;
+}
+
+.phone__input,
+.password__input,
+.name__input,
+.email__input {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #FAFAFA;
+  font-size: 1.25rem;
+}
+
+.phone__input:focus,
+.password__input:focus,
+.name__input:focus,
+.email__input:focus {
+  background-color: #FAFAFA;
+  outline: none;
+}
+
+.forget-password__btn {
+  color: #9F9F9F;
+  align-self: flex-end;
+}
+
+.login__btn,
+.signup__btn {
+  font-family: "Montserrat",sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.login__links__container,
+.signup__links__container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.login__links__text,
+.login__links__text__accent,
+.sihnup__links__text,
+.signup__links__text__accent {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #707070;
+}
+
+.login__links__text__accent,
+.signup__links__text__accent {
+  color: var(--clr--primary);
+}
+
+.login__links,
+.signup__links {
+  display: flex;
+  gap: 1rem;
+}
+
+.login__link,
+.signup__link {
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  background-color: #F8F8F8;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+}
