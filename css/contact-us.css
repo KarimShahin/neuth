@@ -149,6 +149,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1.75rem;
   font-weight: 500;
+  text-transform: capitalize;
 }
 
 .subscribe__form {
