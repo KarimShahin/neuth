@@ -90,3 +90,12 @@ input[type=number] {
 .time__value {
   font-weight: 700;
 }
+
+.active {
+  background-color: var(--clr--primary);
+  color: #fff;
+}
+
+.active:focus {
+  background-color: var(--clr--primary);
+}
