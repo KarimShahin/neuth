@@ -507,3 +507,134 @@
 	border-color: var(--clr--primary);
 }
 
+.live-chat {
+  position: relative;
+}
+
+.live-chat__btn {
+  position: fixed;
+  z-index: 1100;
+  top: 50%;
+  right: -5.3rem;
+  transform: rotate(-90deg);
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.chat__icon {
+  rotate: 90deg;
+}
+
+.chat__body {
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  right: 3rem;
+  transform: translateY(-45%);
+  height: 50vh;
+  width: 400px;
+  z-index: 1001;
+}
+
+.chat__body__header {
+  background-color: #000;
+  padding: 0.5rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.close__icon {
+  width: 17px;
+  height: 17px;
+}
+
+.chat__bubble__container {
+  height: 85%;
+  overflow: auto;
+}
+
+.chat__bubble__day {
+  width: fit-content;
+  padding-block: 1.5rem;
+  margin-inline: auto;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 400;
+}
+
+.chat__bubble {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  color: #d1d1d1;
+}
+
+.chat__bubble__primary {
+  justify-content: flex-start;
+}
+
+.chat__bubble__accent {
+  justify-content: flex-end;
+}
+
+.message__content {
+  width: 75%;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.primary {
+  justify-self: flex-start;
+  background-color: #000;
+  border-top-left-radius: 0;
+  order: 0;
+}
+
+.accent {
+  justify-self: flex-end;
+  background-color: var(--clr--primary);
+  border-top-right-radius: 0;
+  order: 1;
+}
+
+.chat__footer {
+  width: 100%;
+  background-color: #E4E4E4;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attachment__icon {
+  width: 15px;
+}
+
+.send-message__input {
+  width: 80%;
+  background-color: #E4E4E4;
+  color: #585858;
+  font-size: 0.875rem;
+}
+
+.send-message__input:focus {
+  background-color: #E4E4E4;
+  color: #585858;
+  outline: 0;
+}

@@ -6,6 +6,8 @@ const videoSrc = document.querySelector(".video__src");
 const video = document.querySelector(".video");
 const videoContent = document.querySelector(".video__content")
 const videoImages = Array(...document.querySelectorAll(".video__img"));
+const chatBody = document.querySelector(".chat__body");
+const chatBtn = document.querySelector(".live-chat__btn")
 
 const swiper = new Swiper('.swiper', {
   // Default parameters
@@ -125,6 +127,14 @@ function videoChange(e) {
   }
 }
 
+function toogleChat() {
+  if (chatBody.style.display === "none") {
+    chatBody.style.display = "block";
+  } else {
+    chatBody.style.display = "none";
+  }
+}
+
 // page logic
 tabs.map(tab => {
   tab.addEventListener("click", (e) => makeTabActive(e))
@@ -135,3 +145,13 @@ videoImages.map(image => {
 })
 videoPlayBtn.addEventListener("click", (e) => playVideo(e));
 video.addEventListener("ended", (e) => videoReset(e));
+
+document.body.addEventListener("click", (e) => {
+  e.stopPropagation();
+  chatBody.style.display = "none"
+})
+
+chatBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  toogleChat();
+})
