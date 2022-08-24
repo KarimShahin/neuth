@@ -1,0 +1,175 @@
+.contact-us {
+  width: 100%;
+  padding: 4rem 5rem;
+}
+.contact-us__container {
+  width: 100%;
+  display: flex;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.22);
+  border-radius: 0.25rem;
+}
+
+.get-in-touch {
+  width: 30%;
+  background-color: var(--clr--primary);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3.125rem;
+  gap: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.get-in-touch * {
+  color: #fff;
+}
+
+.get-in-touch__title {
+  font-family: "Montserrat",sans-serif;
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
+.get-in-touch__text {
+  font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.get-in-touch__subtitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.125rem;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+}
+
+.get-in-touch__subtitle__text {
+  font-family: "Montserrat",sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 2.45rem;
+}
+
+.get-in-touch__form {
+  width: 70%;
+  padding: 3.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.get-in-touch__form * {
+  color: #414143;
+}
+
+.get-in-touch__form__title {
+  width: 100%;
+  font-family: "Montserrat",sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.inputs__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input__container {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+
+.name__container,
+.phone__container,
+.email__container,
+.age__container,
+.message__container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 1rem;
+  font-family: "Montserrat",sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.message__container {
+  width: 100%;
+}
+
+.name__input,
+.phone__input,
+.email__input,
+.age__input,
+.message__input {
+  padding: 1rem 2rem;
+  border: 1px solid #D8D6DE;
+}
+
+.name__input:focus,
+.phone__input:focus,
+.email__input:focus,
+.age__input:focus,
+.message__input:focus {
+  padding: 1rem 2rem;
+  border: 1px solid #D8D6DE;
+  outline: 0;
+}
+
+.message__input {
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+
+.send__btn {
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+  color: #fff;
+  margin-left: auto;
+}
+
+
+/****** subscribe section *******/
+
+.subscribe {
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.subscribe__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.subscribe__form {
+  width: 100%;
+  width: 35%;
+  border: 1px solid #c4c4c4;
+  padding: 0.375rem;
+  display: flex;
+}
+
+.subscribe__email {
+  width: 100%;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding-left: 1rem;
+  border: 1px solid transparent;
+  transition: border 350ms ease-in;
+  color: #909090;
+}
+
+.subscribe__email:focus {
+  outline: 0;
+  border-color: var(--clr--primary);
+}
