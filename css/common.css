@@ -24,6 +24,10 @@
 	font-family: 'Candara', sans-serif;
 }
 
+*:focus {
+  outline: 0;
+}
+
 a {
 	text-decoration: none;
 	cursor: pointer;
@@ -502,7 +506,7 @@ input[type='number'] {
 	right: 0;
 	bottom: 0;
 	background-color: #00000033;
-	z-index: 1000;
+	z-index: 2000;
 	display: none;
 }
 
