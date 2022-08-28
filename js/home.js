@@ -22,20 +22,23 @@ const swiper = new Swiper('.swiper', {
   // slidesOffsetBefore:200,
   // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20
-    },
     // when window width is >= 480px
     480: {
-      slidesPerView: 3,
-      spaceBetween: 30
+      slidesPerView: 1,
+      slidesPerGroup: 1
     },
     // when window width is >= 640px
-    640: {
+    600: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    },
+    800: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
+    },
+    1000: {
       slidesPerView: 4,
-      spaceBetween: 40
+      slidesPerGroup: 4
     }
   },
   // Navigation arrows
