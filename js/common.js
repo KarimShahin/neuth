@@ -7,6 +7,8 @@ const accountMenu = document.querySelector(".login-menu");
 const closeSideMenu = document.querySelector(".close__btn__icon");
 const navMenu = document.querySelector(".navbar__tabs");
 const openSideMenu = document.querySelector(".hamburger__menu");
+const closeSearchBar = document.querySelector(".search__close");
+const searchBar = document.querySelector(".navbar__icon");
 
 function toogleMenu(e, element) {
   e.stopPropagation()
@@ -76,6 +78,17 @@ document.body.addEventListener("click", (e) => {
   accountMenu.classList.add("close");
 })
 
+document.body.addEventListener("resize", (e) => {
+  if (window.innerWidth > 1200) {
+    navMenu.style.display = "flex";
+  } else {
+    navMenu.style.display = "none"
+  }
+})
+
 accountIcon.addEventListener("click", (e) => toogleAccount(e));
 closeSideMenu.addEventListener("click", (e) => closeNavMenu(e));
 openSideMenu.addEventListener("click", (e) => openNavMenu(e));
+closeSearchBar.addEventListener("click", (e) => {
+  searchBar.blur()
+})
