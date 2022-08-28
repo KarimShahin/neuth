@@ -38,3 +38,23 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .confirm {
+    width: 90%;
+  }
+
+  .confirm__text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .confirm {
+    align-items: center;
+  }
+}
