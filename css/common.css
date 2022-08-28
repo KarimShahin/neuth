@@ -804,6 +804,10 @@ input[type='number'] {
 
 	/* footer */
 
+	.footer__logo {
+		width: 100%;
+	}
+
 	.footer__links {
 		flex-wrap: wrap;
 	}
