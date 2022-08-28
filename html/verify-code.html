@@ -402,44 +402,39 @@
 			<form class="verify-code__form">
 				<div class="input__container">
 					<input
-						type="number"
-						name="number"
 						id="number-one"
 						class="number__input active"
-						min="0"
-						max="9"
+						type="text"
+						maxlength="1"
+						oninput="this.value=this.value.replace(/[^0-9]/g,'');"
 					/>
 					<input
-						type="number"
-						name="number"
 						id="number-two"
 						class="number__input"
-						min="0"
-						max="9"
+						type="text"
+						maxlength="1"
+						oninput="this.value=this.value.replace(/[^0-9]/g,'');"
 					/>
 					<input
-						type="number"
-						name="number"
 						id="number-three"
 						class="number__input"
-						min="0"
-						max="9"
+						type="text"
+						maxlength="1"
+						oninput="this.value=this.value.replace(/[^0-9]/g,'');"
 					/>
 					<input
-						type="number"
-						name="number"
 						id="number-four"
 						class="number__input"
-						min="0"
-						max="9"
+						type="text"
+						maxlength="1"
+						oninput="this.value=this.value.replace(/[^0-9]/g,'');"
 					/>
 					<input
-						type="number"
-						name="number"
 						id="number-five"
 						class="number__input"
-						min="0"
-						max="9"
+						type="text"
+						maxlength="1"
+						oninput="this.value=this.value.replace(/[^0-9]/g,'');"
 					/>
 				</div>
 				<button type="button" disabled class="verify-code__btn">verify</button>
