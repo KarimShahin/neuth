@@ -1,0 +1,34 @@
+.cart__empty {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cart__empty__img {
+
+}
+
+.cart__empty__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart__empty__text {
+  font-weight: 700;
+  font-size: 1.188rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.cart__empty__link {
+  font-weight: 700;
+  font-size: 1.063rem;
+  color: #8F8F8F;
+  text-transform: uppercase;
+}
