@@ -365,10 +365,10 @@
 /********** customer review **********/
 
 .customer__review {
-  padding: 4rem 5rem;
 }
 
 .customer__review__title {
+  padding: 4rem 5rem 0 ;
   font-family: "Montserrat",sans-serif;
   font-weight: 500;
   font-size: 2rem;
@@ -384,6 +384,10 @@
 }
 
 .customer__review__rating {
+  padding-inline: 5rem;
+}
+
+.customer__review__rating__container {
   padding: 3.5rem 3.5rem;
   background-color: #FAFAFA;
   display: flex;
@@ -464,6 +468,156 @@ progress::-webkit-progress-value {
   /* box-shadow: 1px 1px 5px 3px rgba(255, 0, 0, 0.8); */
 }
 
+.customer__review__slider {
+  padding: 3rem 5rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.customer__review__slider .swiper-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.customer__review__slider .swiper-slide {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.customer__review__slider .user__comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  padding: 1.5rem 5rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.user__comment:last-child {
+  margin-bottom: 2rem;
+}
+
+.user__comment::before {
+  content: "";
+  width: 0.625rem;
+  top: 1.75rem;
+  bottom: 1.75rem;
+  left: 0;
+  border-radius: 1rem;
+  background-color: var(--clr--primary);
+  position: absolute;
+}
+
+.user__comment__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user__comment__header__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: "Montserrat",sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.review__stars {
+  display: flex;
+  align-items: center;
+  gap: 0.325rem;
+}
+
+.review__star__icon {
+  width: 1rem;
+  aspect-ratio: 1;
+}
+
+.comment__date {
+  font-family: "Montserrat",sans-serif;
+  font-size: 1.125rem;
+  color: #707070;
+  font-weight: 400;
+}
+
+.user__comment__content {
+  width: 100%;
+  font-family: "Montserrat",sans-serif;
+  color: #707070;
+  font-weight: 400;
+}
+
+.swiper-navigation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 5rem;
+}
+
+.customer__review__slider .swiper-pagination {
+  width: auto !important;
+  margin: 0;
+  display: flex;
+  background-color: #F3F2F7;
+  height: fit-content;
+  border-radius: 2rem;
+  position: unset;
+}
+
+.customer__review__slider .swiper-pagination-bullet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat",sans-serif;
+  padding: 5px 10px;
+  border-radius: 0;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #6E6B7B;
+  opacity: 1;
+  background: #F3F2F7;
+  margin: 0 !important;
+  border-radius: 100%;
+  position: unset;
+}
+
+.customer__review__slider .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #008BC5;
+  border-radius: 100%;
+}
+
+.customer__review__slider .swiper-button-next,
+.customer__review__slider .swiper-button-prev {
+  background-color: #F3F2F7;
+  color: #6E6B7B;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  scale: 0.75;
+  position: unset;
+  transform: translate(0,1rem);
+}
 
 /******* Best seller Section *********/
 
