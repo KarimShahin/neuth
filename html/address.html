@@ -426,22 +426,37 @@
 				<li class="address__step">
 					<span class="address__step__title">Step 1</span>
 					<span class="address__step__text">Delivery Address</span>
-					<div class="address__content__container">
-						<div class="address__content">
-							<p class="address__text">
-								El Shrabassy St , Damietta , Egypt El Shrabassy St , Damietta ,
-								Egypt Building No 12 - Flat 2
-							</p>
-							<input type="radio" name="address" class="check__address" />
-						</div>
-						<div class="address__content">
-							<p class="address__text">
-								El Shrabassy St , Damietta , Egypt El Shrabassy St , Damietta ,
-								Egypt Building No 12 - Flat 2
-							</p>
-							<input type="radio" name="address" class="check__address" />
-						</div>
-						<a class="add__new__address">add new address</a>
+					<div class="address__container">
+            <div class="address__content__container open">
+              <div class="address__content">
+                <p class="address__text">
+                  El Shrabassy St , Damietta , Egypt El Shrabassy St , Damietta ,
+                  Egypt Building No 12 - Flat 2
+                </p>
+                <input type="radio" name="address" class="check__address" />
+              </div>
+              <div class="address__content">
+                <p class="address__text">
+                  El Shrabassy St , Damietta , Egypt El Shrabassy St , Damietta ,
+                  Egypt Building No 12 - Flat 2
+                </p>
+                <input type="radio" name="address" class="check__address" />
+              </div>
+            </div>
+						<a class="add__new__address open">add new address</a>
+            <form class="new__address close">
+              <p class="new__address__title">Add New Address</p>
+              <input type="text" name="address" id="address" class="address__input" placeholder="Address"/>
+              <div class="input__container">
+                <input type="text" name="city" id="city" class="city__input" placeholder="City"/>
+                <input type="text" name="street" id="street" class="street__input" placeholder="Street"/>
+              </div>
+              <div class="input__container">
+                <input type="text" name="building" id="building" class="building__input" maxlength="3" placeholder="Building Number"/>
+                <input type="text" name="flat" id="flat" class="flat__input" maxlength="2" placeholder="Flat Number"/>
+              </div>
+              <a class="btn add__btn">add</a>
+            </form>
 					</div>
 				</li>
 				<li class="address__step">
@@ -507,5 +522,6 @@
 		<!------------- script section -------------->
 
 		<script src="../js/common.js"></script>
+		<script src="../js/address.js"></script>
 	</body>
 </html>
