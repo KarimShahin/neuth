@@ -7,6 +7,9 @@ const city = document.querySelector("#city");
 const street = document.querySelector("#street");
 const building = document.querySelector("#building");
 const flat = document.querySelector("#flat");
+const productsBtn = document.querySelector(".portion__title");
+const productsArrow = document.querySelector(".arrow__up__icon");
+const productsBody = document.querySelector(".portion__content");
 
 function toogleNewAddress(e) {
   console.log("clicked")
@@ -35,6 +38,19 @@ function addNewAddress() {
   building.value = ""
   flat.value = ""
 }
+function toogleProducts() {
+  console.log("clicked")
+  if (productsArrow.classList.contains("rotate")) {
+    productsArrow.classList.remove("rotate");
+    productsBody.style.display = "flex"
+    productsBtn.style.paddingBottom = "1rem";
+  } else {
+    productsArrow.classList.add("rotate")
+    productsBody.style.display = "none"
+    productsBtn.style.paddingBottom = "0";
+  }
+}
 
 newAddressBtn.addEventListener("click", toogleNewAddress);
 addNewAddressBtn.addEventListener("click", addNewAddress);
+productsBtn.addEventListener("click", toogleProducts);

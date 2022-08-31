@@ -262,6 +262,7 @@
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.25rem;
 	font-weight: 500;
+  cursor: pointer;
 }
 
 .arrow__up__icon {
@@ -357,4 +358,8 @@
 
 .close {
   display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
