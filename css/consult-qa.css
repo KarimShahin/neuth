@@ -75,3 +75,25 @@
   text-transform: uppercase;
   padding: 1rem 3rem;
 }
+
+@media (max-width: 1200px) {
+  .qa {
+    padding-inline: 2rem;  
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .qa {
+    padding-inline: 1rem;
+  }
+  .show__result__btn {
+    width: 100%;
+    text-align: center;
+  }
+}
