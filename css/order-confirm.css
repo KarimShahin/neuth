@@ -83,3 +83,33 @@
   font-size: 1.25rem;
   text-transform: uppercase;
 }
+
+@media (max-width: 1400px) {
+  .order__confirm {
+    padding-inline: 2rem;
+  }
+  .order__confirm__steps {
+    padding-inline: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    font-size: 14px;
+  }
+  .order__confirm {
+    padding-inline: 1rem;
+    position: relative;
+  }
+  .order__confirm__steps {
+    width: 100%;
+  }
+  .order__confirm__content {
+    position: absolute;
+    height: inherit;
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+}
