@@ -1,131 +1,202 @@
 .main__container {
-  display: flex;
-  width: 100%;
-  padding: 5rem 8.5rem;
+	display: flex;
+	width: 100%;
+	padding: 5rem 8.5rem;
 }
 
 .main__content {
-  width: 75%;
-  display: flex;
-  flex-direction: column;
+	width: 75%;
+	display: flex;
+	flex-direction: column;
 }
 
 .blog__post {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }
 
 .blog__post__img {
-  width: 100%;
+	width: 100%;
 }
 
 .blog__post__header__title {
-  font-weight: 700;
-  font-size: 1.625rem;
-  color: var(--clr--primary);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+	font-weight: 700;
+	font-size: 1.625rem;
+	color: var(--clr--primary);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
 .blog__post__date {
-  font-weight: 700;
-  font-size: 1.625rem;
-  color: #000;
+	font-weight: 700;
+	font-size: 1.625rem;
+	color: #000;
 }
 
 .blog__post__content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
 }
 
 .blog__post__title {
-  font-size: 1.75rem;
-  font-family: 700;
-  color: #000;
+	font-size: 1.75rem;
+	font-family: 700;
+	color: #000;
 }
 
 .blog__post__text {
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: #707070;
+	font-size: 1.25rem;
+	font-weight: 400;
+	color: #707070;
 }
 
 .side__menu {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
 .categories,
 .related__blog {
-  padding: 2rem;
-  background-color: #FAFAFA;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+	padding: 2rem;
+	background-color: #fafafa;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
 .categories__title,
 .related__blog__title {
-  font-size: 1.125rem;
-  font-family: "Montserrat",sans-serif;
-  font-weight: 600;
-  color: #000;
+	font-size: 1.125rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #000;
 }
 
 .category {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  font-size: 1rem;
-  font-family: "Montserrat",sans-serif;
-  color: #000;
-  gap: 1rem;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
+	gap: 1rem;
 }
 
 .category__img {
-  transform: rotate(90deg);
-  scale: 1.1;
+	transform: rotate(90deg);
+	scale: 1.1;
 }
 
 .related__blog__card {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
 }
 
 .related__blog__card__img {
-  width: 35%;
-  aspect-ratio: 1;
-  object-fit: cover;
+	width: 35%;
+	aspect-ratio: 1;
+	object-fit: cover;
 }
 
 .related__blog__card__date {
-  font-size: 0.875rem;
-  color: #000;
-  font-weight: 400;
+	font-size: 0.875rem;
+	color: #000;
+	font-weight: 400;
 }
 
 .related__blog__card__title {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #000;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #000;
 }
 
-
-
 .best-seller {
-  padding-inline: 0;
+	padding-inline: 0;
 }
 
 .best-seller__header__title {
-  color: var(--clr--primary);
+	color: var(--clr--primary);
+}
+
+@media (max-width: 1600px) {
+	.main__container {
+		padding-inline: 5rem;
+	}
+}
+@media (max-width: 1400px) {
+	.main__container {
+		padding-inline: 2rem;
+	}
+}
+@media (max-width: 1200px) {
+	.categories,
+	.related__blog {
+		padding: 2rem 1rem;
+	}
+}
+@media (max-width: 1000px) {
+	.main__content {
+		width: 70%;
+	}
+
+	.side__menu {
+		width: 30%;
+	}
+	.related__blog__card__img {
+		width: 40%;
+    flex-shrink: 0;
+	}
+}
+@media (max-width: 800px) {
+	:root {
+		font-size: 14px;
+	}
+  .main__container {
+    padding: 3rem 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .main__container {
+    flex-direction: column;
+  }
+  .side__menu {
+    order: -1;
+    /* flex-direction: row; */
+    width: 100%;
+  }
+  .main__content {
+    width: 100%;
+    padding-right: 0;
+  }
+  .blog__post {
+    width: 100%;
+  }
+  .categories {
+    width: 100%;
+  }
+  .related__blog {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+  .related__blog__title {
+    width: 100%;
+  }
+  .related__blog__card {
+    width: 45%;
+  }
+}
+@media (max-width: 600px) {
 }

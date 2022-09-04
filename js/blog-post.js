@@ -1,11 +1,11 @@
 
 const swiper = new Swiper('.swiper', {
   // Default parameters
-  slidesPerView: 3,
+  slidesPerView: 2,
   spaceBetween: 10,
   // Optional parameters
   direction: 'horizontal',
-  slidesPerGroup: 3,
+  slidesPerGroup:2,
   // centeredSlidesBounds: true,
   // loop:true,
   // slidesOffsetAfter: 200,
@@ -14,8 +14,8 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     // when window width is >= 480px
     480: {
-      slidesPerView: 1,
-      slidesPerGroup: 1
+      slidesPerView: 2,
+      slidesPerGroup: 2
     },
     // when window width is >= 640px
     600: {
@@ -23,8 +23,8 @@ const swiper = new Swiper('.swiper', {
       slidesPerGroup: 2
     },
     800: {
-      slidesPerView: 2,
-      slidesPerGroup: 2
+      slidesPerView: 3,
+      slidesPerGroup: 3
     },
     1000: {
       slidesPerView: 3,
