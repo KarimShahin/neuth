@@ -549,8 +549,8 @@ option {
 	margin-top: 2rem;
 	display: flex;
 	justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+	flex-wrap: wrap;
+	gap: 0.5rem;
 }
 
 .sample__card {
@@ -679,13 +679,16 @@ option {
 	.selected__sample {
 		width: 30%;
 	}
-  .choose__sample__container {
-    width: 90%;
-    padding: 2rem;
-  }
-  .sample__card {
-    width: 22%;
-  }
+	.choose__sample__container {
+		width: 90%;
+		padding: 2rem;
+	}
+	.sample__container {
+		gap: 1rem;
+	}
+	.sample__card {
+		width: 22%;
+	}
 }
 @media (max-width: 900px) {
 	.products {
@@ -721,16 +724,16 @@ option {
 		width: 75%;
 	}
 }
-@media (max-width:650px) {
-  .sample__container {
-    margin-top: 1rem;
-  }
-  .sample__card {
-    width: 45%;
-  }
-  .sample__img {
-    width: 40%;
-  }
+@media (max-width: 650px) {
+	.sample__container {
+		margin-top: 1rem;
+	}
+	.sample__card {
+		width: 45%;
+	}
+	.sample__img {
+		width: 40%;
+	}
 }
 @media (max-width: 600px) {
 	.product,
@@ -766,12 +769,12 @@ option {
 		flex-shrink: 0;
 		width: 35%;
 	}
-  .choose__sample__container {
-    padding: 1rem;
-  }
-  .sample__card {
-    width: 48%;
-  }
+	.choose__sample__container {
+		padding: 1rem;
+	}
+	.sample__card {
+		width: 48%;
+	}
 	.products__header {
 		gap: 0.5rem;
 	}
