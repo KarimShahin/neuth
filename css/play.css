@@ -1,0 +1,244 @@
+/********** play section *********/
+
+.play {
+  padding: 8rem 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5rem;
+}
+
+.play__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  gap: 1rem;
+}
+
+.play__content__title {
+  font-size: 2rem;
+  color: var(--clr--primary);
+  font-weight: 700;
+}
+
+.play__content__text {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 400;
+}
+
+.start__now__btn {
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.play__iframe {
+  width: min(40%,450px);
+  aspect-ratio: 1;
+  border: 0;
+}
+
+.modal__container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000022;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.your__prize__modal,
+.tries__finished__modal {
+  width: 30%;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.your__prize__modal {
+  padding: 0;
+  flex-direction: column;
+}
+
+
+.your__prize__modal__content,
+.your__prize__modal__actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+}
+
+.your__prize__modal__content {
+  padding-top: 3rem;
+  background-image: url("../assets/neuth\ icons/Mask\ Group\ 28.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.your__prize__modal__title {
+  font-family: "Montserrat",sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr--primary);
+  text-transform: uppercase;
+}
+
+.your__prize__modal__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.use__now__btn,
+.use__later__btn {
+  padding: 1rem 2rem;
+  width: 100%;
+  font-family: "Montserrat",sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.use__later__btn {
+  background-color: #F5F5F5;
+  color: #3D3D3D;
+}
+
+.tries__finished__modal__text {
+  color: red;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  width: 60%;
+}
+
+.close__btn {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  background-color: #fff;
+  /* border:1px solid #000; */
+  width: 25px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0,-50%);
+  border-radius: 100%;
+  box-shadow: 0 0 2px 1px #00000022;
+}
+
+/****** subscribe section *******/
+
+.subscribe {
+	padding-block: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.subscribe__title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.75rem;
+	font-weight: 500;
+}
+
+.subscribe__form {
+	width: 100%;
+	width: 35%;
+	border: 1px solid #c4c4c4;
+	padding: 0.375rem;
+	display: flex;
+}
+
+.subscribe__email {
+	width: 100%;
+	display: inline-block;
+	font-size: 1.125rem;
+	padding-left: 1rem;
+	border: 1px solid transparent;
+	transition: border 350ms ease-in;
+	color: #909090;
+}
+
+.subscribe__email:focus {
+	outline: 0;
+	border-color: var(--clr--primary);
+}
+
+.open {
+  display: flex;
+}
+.close {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .play {
+    padding-inline: 10rem;
+  }
+}
+@media (max-width: 1200px) {
+  .play {
+    padding-inline: 8rem;
+  }
+}
+@media (max-width: 1000px) {
+  .play {
+      padding-inline: 4rem;
+    }
+  .subscribe {
+		padding-inline: 1rem;
+	}
+
+	.subscribe__form {
+		width: 80%;
+	}
+}
+@media (max-width: 800px) {
+  .play {
+      padding-inline: 1rem;
+      gap: 2rem;
+      flex-direction: column;
+  }
+  .play__content {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .play__content__text {
+    text-align: center;
+  }
+  .play__iframe {
+    width: min(100%,450px);
+  }
+	.subscribe {
+		padding-inline: 1rem;
+	}
+
+	.subscribe__form {
+		width: 100%;
+	}
+}
