@@ -199,10 +199,17 @@
   .play {
     padding-inline: 10rem;
   }
+  .tries__finished__modal__text {
+    width: 100%;
+  }
 }
 @media (max-width: 1200px) {
   .play {
     padding-inline: 8rem;
+  }
+  .tries__finished__modal,
+  .your__prize__modal {
+    width: 40%;
   }
 }
 @media (max-width: 1000px) {
@@ -216,6 +223,13 @@
 	.subscribe__form {
 		width: 80%;
 	}
+}
+
+@media (max-width: 900px) {
+  .tries__finished__modal,
+    .your__prize__modal {
+      width: 50%;
+    }
 }
 @media (max-width: 800px) {
   .play {
@@ -241,4 +255,14 @@
 	.subscribe__form {
 		width: 100%;
 	}
+    .tries__finished__modal,
+    .your__prize__modal {
+      width: 60%;
+    }
+}
+@media(max-width:600px) {
+  .tries__finished__modal,
+    .your__prize__modal {
+      width: 90%;
+    }
 }
