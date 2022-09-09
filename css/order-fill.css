@@ -38,128 +38,120 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
 }
 
-.edit-info__header {
+.order__actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.order__action {
   font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
+  color: #707070;
+  background-color: #E4E4E4;
+  padding: 0.75rem 1rem;
+  min-width: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.order {
+  width: 100%;
+  position: relative;
+  border: 1px solid #E4E4E4;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 0;
+}
+
+.order::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 0;
+  width: 10px;
+  border-radius: 5px;
+}
+
+.order__id,
+.order__date,
+.order__state,
+.order__action__icon__container {
+  width: 50%;
+  font-family: "Montserrat",sans-serif;
+}
+
+.order__id {
   font-size: 1.125rem;
   color: #000;
 }
 
-.default__address {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  border: 1px solid #E4E4E4;
-  padding: 1rem;
-}
-
-.address {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #FAFAFA;
-  border: 1px solid #F5F5F5;
-  padding: 1rem;
-}
-
-.address__text {
-  font-family: "Montserrat",sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #5B5B5B;
-}
-
-.default__address .address__text {
-  width: 25%;
-}
-
-.more__icon__container {
-  width: 10px;
-  aspect-ratio: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer ;
-}
-
-.more__icon {
-  width: 3px;
-  aspect-ratio: 1;
-  background-color: #3D3D3D;
-  border-radius: 100%;
-  position: relative;
-  cursor: pointer;
-}
-
-.more__icon::before,
-.more__icon::after {
-  content: "";
-  cursor: pointer;
-  width: 3px;
-  height: 3px;
-  position: absolute;
-  border-radius: 100%;
-  background-color: #3D3D3D;
-}
-
-.more__icon::before {
-  top: -5px;
-}
-
-.more__icon::after {
-  bottom: -5px;
-}
-
-.address__modal {
-  position: absolute;
-  width: 200px;
-  border-radius: 5px;
-  background-color: #fff;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 1rem;
-  box-shadow: 0 0 6px 0px #00000029;
-  top: 0;
-  right: 0;
-  cursor: initial;
-  transform: translate(-0.5rem,1rem);
-}
-
-.address__modal__action {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: "Montserrat",sans-serif;
-  font-size: 1rem;
-  color: #000;
-  cursor: pointer;
-}
-
-.modal__icon {
-  width: 10%;
-}
-
-.add__new__btn {
-  padding: 1rem 2rem;
-  border: 2px dashed #8F8F8F;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: center;
+.order__date {
+  font-size: 0.875rem;
   color: #707070;
 }
 
-.open {
-  display: flex;
+.order__state {
+  font-size: 1rem;
 }
 
-.close {
-  display: none;
+.order.pending .order__state {
+  color: #87764E;
+}
+.order.pending::before {
+  background-color: #87764E;
+}
+
+.order.processing .order__state {
+  color: #1492E6;
+}
+.order.processing::before {
+  background-color: #1492E6;
+}
+
+.order.delivered .order__state {
+  color: #00A1A2;
+}
+.order.delivered::before {
+  background-color: #00A1A2;
+}
+
+.order.shipped .order__state {
+  color: #F28B2E;
+}
+.order.shipped::before{
+  background-color: #F28B2E;
+}
+
+.order.rejected .order__state {
+  color: #FF0000;
+}
+.order.rejected::before{
+  background-color: #FF0000;
+}
+
+.order__action__icon {
+  width: 15px;
+  height: 14px;
+}
+
+.order__date,
+.order__action__icon__container {
+  text-align: right;
+}
+
+.active__tab {
+  background-color: var(--clr--primary);
+  color: #fff;
 }
 
 @media (max-width: 1400px) {
@@ -173,17 +165,16 @@
 }
 
 @media (max-width: 1200px) {
+  /* .edit-info {
+    padding: 0;
+  } */
 
-  .add__new__btn {
-    width: 70%;
+  .order__action {
+    width: 30%;
   }
 }
 
-@media (max-width: 1000px) {
-  .add__new__btn {
-    width: 90%;
-  }
-}
+@media (max-width: 1000px) {}
 
 @media (max-width: 900px) {
   :root {
@@ -209,10 +200,6 @@
 
   .edit-info {
     padding-right: 0;
-  }
-
-  .add__new__btn {
-    width: 100%;
   }
 }
 
