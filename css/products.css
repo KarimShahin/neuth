@@ -182,6 +182,7 @@
 	aspect-ratio: 1;
 	border-radius: 100%;
 	color: #6e6b7b;
+	cursor: pointer;
 }
 
 .page.active {
