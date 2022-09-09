@@ -18,7 +18,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 		<link rel="stylesheet" href="../css/common.css" />
-		<link rel="stylesheet" href="../css/profile.css" />
+		<link rel="stylesheet" href="../css/orders.css" />
 		<title>Home | Neuth</title>
 	</head>
 	<body>
@@ -423,11 +423,11 @@
 
 		<section class="account">
 			<div class="account__tabs">
-				<p class="account__tab active">
+				<p class="account__tab">
 					<img
 						alt=""
 						class="account__tab__icon"
-						src="../assets/neuth icons/edit-active.svg"
+						src="../assets/neuth icons/edit.svg"
 					/>
 					Edit Information
 				</p>
@@ -447,11 +447,11 @@
 					/>
 					My Addresses
 				</p>
-				<p class="account__tab">
+				<p class="account__tab active">
 					<img
 						alt=""
 						class="account__tab__icon"
-						src="../assets/neuth icons/Mask Group 17.svg"
+						src="../assets/neuth icons/Mask Group 17-active.svg"
 					/>
 					My Orders
 				</p>
@@ -481,20 +481,21 @@
 				</p>
 			</div>
 			<div class="edit-info">
-				<h3 class="edit-info__header">Change Your Personal Information</h3>
-				<label for="name" class="label">
-					Name
-					<input type="text" name="name" class="input" />
-				</label>
-				<label for="email" class="label">
-					Email
-					<input type="text" name="email" class="input" />
-				</label>
-				<label for="phone" class="label">
-					Phone
-					<input type="text" name="phone" class="input" />
-				</label>
-				<a href="#" class="btn change__btn">Change</a>
+				<div class="order__actions">
+					<a class="order__action active__tab">All</a>
+					<a class="order__action"> Pending </a>
+					<a class="order__action"> Accepted </a>
+					<a class="order__action"> Processing </a>
+					<a class="order__action"> Shipped </a>
+					<a class="order__action"> Rejected </a>
+				</div>
+				<img
+					class="order__img"
+					alt=""
+					src="../assets/neuth icons/Group 23424.svg"
+				/>
+				<p class="order__main__text">No Orders</p>
+				<p class="order__sub__text">You Haven't Orders Right Now</p>
 			</div>
 		</section>
 		<script src="../js/common.js"></script>
