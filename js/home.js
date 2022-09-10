@@ -1,11 +1,6 @@
 // variable declaration
 const tabs = Array(...document.querySelectorAll('.tab'));
 const tabsBody = Array(...document.querySelectorAll('.tab__body'));
-const videoPlayBtn = document.querySelector('.video__play__btn');
-const videoSrc = document.querySelector('.video__src');
-const video = document.querySelector('.video');
-const videoContent = document.querySelector('.video__content');
-const videoImages = Array(...document.querySelectorAll('.video__img'));
 const chatBody = document.querySelector('.chat__body');
 const chatBtn = document.querySelector('.live-chat__btn');
 const menu = ["","",""]
@@ -113,43 +108,6 @@ function makeTabActive(e) {
 	element.classList.add('active');
 }
 
-function playVideo(e) {
-	video.removeAttribute('loop');
-	videoContent.style.display = 'none';
-	video.play();
-}
-
-function videoReset(e) {
-	video.removeAttribute('loop');
-	videoContent.style.display = 'block';
-}
-
-function videoChange(e) {
-	console.log(e.target.classList[1]);
-	if (e.target.classList[1] === 'zero') {
-		video.pause();
-		videoSrc.setAttribute(
-			'src',
-			'../assets/videos/WhatsApp Video 2022-08-07 at 6.40.33 PM (online-video-cutter.com).mp4'
-		);
-		playVideo();
-	} else if (e.target.classList[1] === 'one') {
-		video.pause();
-		videoSrc.setAttribute(
-			'src',
-			'../assets/videos/WhatsApp Video 2022-08-07 at 6.40.33 PM (online-video-cutter.com).mp4'
-		);
-		playVideo();
-	} else if (e.target.classList[1] === 'two') {
-		video.pause();
-		videoSrc.setAttribute(
-			'src',
-			'../assets/videos/WhatsApp Video 2022-08-07 at 6.40.33 PM (online-video-cutter.com).mp4'
-		);
-		playVideo();
-	}
-}
-
 function toogleChat() {
 	if (chatBody.style.display === 'none') {
 		chatBody.style.display = 'block';
@@ -162,12 +120,6 @@ function toogleChat() {
 tabs.map((tab) => {
 	tab.addEventListener('click', (e) => makeTabActive(e));
 });
-
-videoImages.map((image) => {
-	image.addEventListener('click', (e) => videoChange(e));
-});
-videoPlayBtn.addEventListener('click', (e) => playVideo(e));
-video.addEventListener('ended', (e) => videoReset(e));
 
 document.body.addEventListener('click', (e) => {
 	e.stopPropagation();

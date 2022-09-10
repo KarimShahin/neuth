@@ -267,16 +267,6 @@
   .pagination {
     scale: 0.8;
   }
-
-  .shop__swiper .button-next {
-    transform: translate(-3rem, 1.5rem);
-    scale: 0.55;
-  }
-
-  .shop__swiper .button-prev {
-    transform: translate(3rem, 1.5rem);
-    scale: 0.55;
-  }
 }
 
 @media (max-width: 400px) {
