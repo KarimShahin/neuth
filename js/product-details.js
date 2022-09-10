@@ -1,6 +1,9 @@
 const tabs = Array(...document.querySelectorAll(".tab"));
 const tabsBody = Array(...document.querySelectorAll(".tab__body"))
 const menu = ["1","2","3","4","5","6","7"]
+const plusBtn = document.querySelector(".plus__btn");
+const minusBtn = document.querySelector(".minus__btn");
+const productCount = document.querySelector(".product__count");
 
 const swiper = new Swiper('.swiper', {
   // Default parameters
@@ -118,4 +121,12 @@ function makeTabActive(e) {
 
 tabs.map(tab => {
   tab.addEventListener("click", (e) => makeTabActive(e))
+})
+productCount.disabled = true
+productCount.value = 1;
+
+plusBtn.addEventListener("click",()=>productCount.value = Number(productCount.value) + 1)
+minusBtn.addEventListener("click", () => {
+  if(Number(productCount.value) > 1)
+  productCount.value = Number(productCount.value) - 1
 })

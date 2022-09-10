@@ -7,7 +7,8 @@ const closeBtn = document.querySelector(".close__btn")
 const sampleInputs = document.querySelectorAll(".sample__input")
 const addBtns = document.querySelectorAll(".add__btn")
 const editSampleBtn = document.querySelector(".edit__sample__btn")
-
+const plusBtns = document.querySelectorAll(".plus__btn");
+const minusBtns = document.querySelectorAll(".minus__btn");
 const swiper = new Swiper('.swiper', {
   // Default parameters
   slidesPerView: 1,
@@ -87,5 +88,25 @@ sampleInputs.forEach(input => input.addEventListener("change", e => {
         addBtns[index].classList.remove("disabled")
       }
     })
+  }
+}))
+
+plusBtns.forEach(btn => btn.addEventListener("click",(e) => {
+  e.stopPropagation()
+  if (e.target.tagName === "IMG")
+    e.target.parentElement.previousElementSibling.value = Number(e.target.parentElement.previousElementSibling.value) + 1
+  else if (e.target.tagName === "A")
+    e.target.previousElementSibling.value = Number(e.target.previousElementSibling.value) + 1
+}))
+
+minusBtns.forEach(btn => btn.addEventListener("click",(e) => {
+  e.stopPropagation()
+  if (e.target.tagName === "IMG") {
+    if(Number(e.target.parentElement.nextElementSibling.value) > 1)
+      e.target.parentElement.nextElementSibling.value = Number(e.target.parentElement.nextElementSibling.value) - 1
+  }
+  else if (e.target.tagName === "A") {
+    if(Number(e.target.nextElementSibling.value) > 1)
+      e.target.nextElementSibling.value = Number(e.target.nextElementSibling.value) - 1
   }
 }))
