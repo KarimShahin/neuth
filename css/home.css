@@ -232,8 +232,7 @@
 
 .swiper-rtl .swiper-button-next::after {
 	position: absolute;
-	right: 50%;
-	transform: translateX(40%);
+	transform: translateX(50%);
 	z-index: 100;
 }
 
@@ -246,8 +245,8 @@
 
 .swiper-rtl .swiper-button-prev::after {
 	position: absolute;
-	left: 50%;
-	transform: translateX(-40%);
+	/* right: 50%; */
+	transform: translateX(-50%);
 	z-index: 100;
 }
 
