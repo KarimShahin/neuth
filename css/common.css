@@ -94,6 +94,22 @@ input[type='number'] {
 	/* aspect-ratio: 1; */
 }
 
+.ar {
+	direction: rtl;
+}
+
+.ar * {
+	direction: rtl;
+}
+
+.en {
+	direction: ltr;
+}
+
+.en * {
+	direction: ltr;
+}
+
 /************** free shipping section **********/
 
 .free__shipping {

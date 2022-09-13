@@ -144,7 +144,6 @@ chatBtn.addEventListener('click', (e) => {
 	e.stopPropagation();
 	toogleChat();
 });
-console.log(promoModal)
 promoModal.forEach(modal => modal.addEventListener("click",()=> modal.classList.add("close")))
 promoModalInner.forEach(modal => modal.addEventListener("click", (e) => e.stopPropagation()))
 

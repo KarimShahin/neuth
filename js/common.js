@@ -9,6 +9,7 @@ const navMenu = document.querySelector(".navbar__tabs");
 const openSideMenu = document.querySelector(".hamburger__menu");
 const closeSearchBar = document.querySelector(".search__close");
 const searchBar = document.querySelector(".navbar__icon");
+const language = document.querySelector(".language");
 
 function toogleMenu(e, element) {
   e.stopPropagation()
@@ -52,11 +53,9 @@ function toogleAccount(e) {
   }
 }
 function closeNavMenu(e) {
-  console.log(navMenu)
   navMenu.style.display = "none"
 }
 function openNavMenu(e) {
-  console.log(navMenu)
   navMenu.style.display = "flex"
 }
 
@@ -91,4 +90,17 @@ closeSideMenu.addEventListener("click", (e) => closeNavMenu(e));
 openSideMenu.addEventListener("click", (e) => openNavMenu(e));
 closeSearchBar.addEventListener("click", (e) => {
   searchBar.blur()
+})
+
+language.addEventListener("click", () => {
+  if (document.documentElement.classList.contains("ar")) {
+    document.documentElement.classList.replace("ar","en")  
+  } else {
+    document.documentElement.classList.replace("en","ar")  
+  }
+  // if (document.dir !== "rtl") {
+  //   document.dir = "rtl"
+  // } else {
+  //   document.dir = ""
+  // }
 })
