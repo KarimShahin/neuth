@@ -5,7 +5,8 @@ const chatBody = document.querySelector('.chat__body');
 const chatBtn = document.querySelector('.live-chat__btn');
 const promoModal = document.querySelectorAll(".onboard__modal");
 const promoModalInner = document.querySelectorAll(".onboard__modal__inner")
-const menu = ["","",""]
+const shareBtn = document.querySelectorAll(".share");
+const menu = ["", "", ""]
 var mySwiper = new Swiper('.swiper-container', {
 	// If we need pagination
   // slidesPerView: 1,
@@ -118,6 +119,17 @@ function toogleChat() {
 	}
 }
 
+function copy() {
+  // Get the text field
+  var copyText = document.getElementById("copy__input");
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+} 
+
 // page logic
 tabs.map((tab) => {
 	tab.addEventListener('click', (e) => makeTabActive(e));
@@ -134,4 +146,21 @@ chatBtn.addEventListener('click', (e) => {
 });
 console.log(promoModal)
 promoModal.forEach(modal => modal.addEventListener("click",()=> modal.classList.add("close")))
-promoModalInner.forEach(modal => modal.addEventListener("click",(e)=>e.stopPropagation()))
+promoModalInner.forEach(modal => modal.addEventListener("click", (e) => e.stopPropagation()))
+
+document.querySelector(".share__popup__modal").addEventListener("click", () => {
+	document.querySelector(".share__popup__modal").style.display = "none"
+})
+document.querySelectorAll(".share__popup__modal__inner").forEach(modal => modal.addEventListener("click", (e) => {
+	e.stopPropagation()
+}))
+document.querySelector("#copy__btn").addEventListener("click", () => {
+	document.querySelector(".copy__text").style.display = "block";
+	let timer = setTimeout(() => {
+		document.querySelector(".copy__text").style.display = "none";
+		clearTimeout(timer)
+	},1000)
+	copy()
+});
+
+shareBtn.forEach(btn => btn.addEventListener("click",() => document.querySelector(".share__popup__modal").style.display = "flex"))

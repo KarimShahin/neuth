@@ -553,7 +553,7 @@
 
 /******* modals section **********/
 
-.onboard__modal {
+.onboard__modal,.share__popup__modal {
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -566,7 +566,7 @@
 	align-items: center;
 }
 
-.onboard__modal__inner {
+.onboard__modal__inner,.share__popup__modal__inner {
 	background-color: #fff;
 	padding: 2rem;
 	min-height: 50vh;
@@ -575,6 +575,63 @@
 	gap: 1rem;
 	align-items: center;
 	justify-content: center;
+}
+
+.share__popup__modal__inner {
+	min-height: 20vh;
+	min-width: 40vh;
+	flex-direction: column;
+	position: relative;
+}
+
+.social__icons {
+	width: 60%;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.social__icon {
+	color: #fff;
+	width: 40%;
+	aspect-ratio: 1;
+	background-color: var(--clr--primary);
+	padding: 0rem;
+	object-fit: scale-down;
+	border-radius: 100%;
+	padding: 0.5rem;
+	cursor: pointer;
+}	
+
+.label__container {
+	display: flex;
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid #e4e4e4;
+}
+
+#copy__input {
+	width: 100%;
+	font-family: "Montserrat",sans-serif;
+	font-size: 1rem;
+}
+
+#copy__btn {
+	font-family: "Montserrat",sans-serif;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	background-color: var(--clr--primary);
+	color: #fff;
+}
+
+.copy__text {
+	display: none;
+	position: absolute;
+	bottom: 2.5rem;
+	background-color: #e4e4e4;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
 }
 
 .onboard__promo__modal__content {
