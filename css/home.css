@@ -6,6 +6,17 @@
 	background-color: #f4f2f4;
 }
 
+.swiper__container {
+	display: flex;
+}
+
+.hero__main__content {
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 .hero__content {
 	width: 55%;
 	display: flex;
@@ -14,6 +25,13 @@
 	align-items: center;
 }
 
+.hero__main__content__container {
+	padding-inline: 8.5rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
 .hero__content__container {
 	padding-inline: 8.5rem;
 	width: 100%;
@@ -22,6 +40,9 @@
 	gap: 1rem;
 }
 
+.hero__main__title {
+	font-size: 2rem;
+}
 .hero__title {
 	font-size: 2rem;
 }
@@ -36,14 +57,23 @@
 
 .hero__btn {
 }
+.hero__main__image__slider {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
 .hero__image__slider {
 	width: 45%;
 	overflow: hidden;
 	position: relative;
 }
 
+.hero__main__image {
+	width: 45%;
+	height: inherit;
+}
 .hero__image {
-	width: 100%;
+	width: 45%;
 	height: inherit;
 }
 
@@ -69,12 +99,16 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-	/* width: fit-content; */
-	transform: rotate(90deg);
-	top: 0;
+	width: 10%;
+	height: 10%;
+	top: 50%;
 	right: 0;
-	left: 0;
+	left: auto;
+	transform: rotate(90deg);
+	/* top: 0;
 	bottom: 0;
+	left: 0;
+	right: 0; */
 	position: absolute;
 }
 
@@ -517,6 +551,105 @@
 	font-weight: 700;
 }
 
+/******* modals section **********/
+
+.onboard__modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background-color: #00000022;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.onboard__modal__inner {
+	background-color: #fff;
+	padding: 2rem;
+	min-height: 50vh;
+	min-width: 50vw;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.onboard__promo__modal__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+	width: 40%;
+}
+
+.onboard__modal__content {
+	padding-inline-start: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+	width: 50%;
+}
+
+.onboard__promo__modal__title {
+	font-family: "Montserrat",sans-serif;
+	font-size: 1.125rem;
+	color: var(--clr--primary);
+	font-weight: 700;
+}
+
+.onboard__modal__img {
+	width: 30%;
+}
+
+.onboard__modal__title {
+	font-family: "Montserrat",sans-serif;
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+
+.onboard__promo__modal__text,
+.onboard__modal__text {
+	font-family: "Montserrat",sans-serif;
+	font-size: 1.25rem;
+}
+
+.onboard__promo__modal__btn {
+	font-family: "Montserrat",sans-serif;
+	font-weight: 500;
+	color: var(--clr--primary);
+	border: 1px solid var(--clr--primary);
+	padding: 1rem 2.5rem;
+	font-size: 0.875rem;
+	letter-spacing: 5px;
+	cursor: auto;
+	text-align: center;
+}
+
+.onboard__modal__btn {
+	width: fit-content;
+	font-family: "Montserrat",sans-serif;
+	font-weight: 500;
+	color: #fff;
+	background-color: var(--clr--primary);
+	/* border: 1px solid var(--clr--primary); */
+	padding: 1rem 2.5rem;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	/* letter-spacing: 5px; */
+	cursor: auto;
+	text-align: center;
+}
+
+.red {
+	color: #ff0000;
+}
+
 /****** subscribe section *******/
 
 .subscribe {
@@ -686,6 +819,14 @@
 	background-color: #e4e4e4;
 	color: #585858;
 	outline: 0;
+}
+
+.open {
+	display: flex;
+}
+
+.close {
+	display: none;
 }
 
 @media (max-width: 1600px) {

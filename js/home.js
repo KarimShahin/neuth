@@ -3,6 +3,8 @@ const tabs = Array(...document.querySelectorAll('.tab'));
 const tabsBody = Array(...document.querySelectorAll('.tab__body'));
 const chatBody = document.querySelector('.chat__body');
 const chatBtn = document.querySelector('.live-chat__btn');
+const promoModal = document.querySelectorAll(".onboard__modal");
+const promoModalInner = document.querySelectorAll(".onboard__modal__inner")
 const menu = ["","",""]
 var mySwiper = new Swiper('.swiper-container', {
 	// If we need pagination
@@ -130,3 +132,6 @@ chatBtn.addEventListener('click', (e) => {
 	e.stopPropagation();
 	toogleChat();
 });
+console.log(promoModal)
+promoModal.forEach(modal => modal.addEventListener("click",()=> modal.classList.add("close")))
+promoModalInner.forEach(modal => modal.addEventListener("click",(e)=>e.stopPropagation()))
