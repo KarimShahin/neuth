@@ -31,5 +31,8 @@ spinBtn.addEventListener("click", () => {
   } else if (randomAngel * 360 > 265 && randomAngel * 360 < 325) {
     input.value = 5;
     console.log(5)
+  } else {
+    input.value = 6;
+    console.log(6)
   }
 })
