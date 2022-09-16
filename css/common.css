@@ -277,6 +277,11 @@ input[type='number'] {
 	gap: 10px;
 }
 
+.ar .search__view-all {
+	margin-right: auto;
+	margin-left: 0;
+}
+
 .search__view-all__text {
 	font-size: 1.25rem;
 	color: var(--clr--primary);
@@ -285,6 +290,10 @@ input[type='number'] {
 .search__view-all__icon {
 	width: 20px;
 	height: 20px;
+}
+
+.ar .search__view-all__icon {
+	transform: rotate(180deg);
 }
 
 .navbar__icon:nth-child(1):focus-within {
@@ -304,6 +313,11 @@ input[type='number'] {
 	padding-block: 1rem;
 	padding-left: 3rem;
 	visibility: visible;
+}
+
+.ar .navbar__icon:nth-child(1):focus-within .search__bar {
+	padding-right: 3rem;
+	padding-left: 0;
 }
 
 .navbar__icon:nth-child(1):focus-within .search__body {
@@ -355,11 +369,22 @@ input[type='number'] {
 }
 
 .menu {
-	transform: translateY(2rem);
+	transform: translateY(1rem);
+	display: flex;
+	flex-direction: column;
 }
 
 .login-menu {
 	transform: translate(-4.5rem, 11rem);
+	padding: 0;
+	margin: 0;
+	width: 150px;
+	display: flex;
+		flex-direction: column;
+}
+
+.ar .login-menu {
+	transform: translate(5rem, 11rem);
 	padding: 0;
 	margin: 0;
 	width: 150px;
@@ -377,8 +402,14 @@ input[type='number'] {
 	box-shadow: 0 0 5px 0px #00000022;
 }
 
+
 .menu::after {
 	left: 1rem;
+}
+
+.ar .menu::after {
+	right: 1rem;
+	left: 0;
 }
 
 .login-menu::after {
@@ -386,6 +417,10 @@ input[type='number'] {
 	background-color: var(--clr--primary);
 }
 
+.ar .login-menu::after {
+	left: 1rem;
+	right: auto;
+}
 .menu__link {
 	display: inline-block;
 	padding: 0.25rem 1rem;
@@ -540,6 +575,11 @@ input[type='number'] {
 	top: 13%;
 	right: 7.5%;
 	cursor: auto;
+}
+
+.ar .notification__content__container {
+	right: auto;
+	left: 7.5%;
 }
 
 .notification__content__header {
@@ -713,6 +753,11 @@ input[type='number'] {
 		height: 100vh;
 		z-index: 9999;
 		width: 25%;
+	}
+
+	.ar .navbar__tabs {
+		left: auto;
+		right: 0;
 	}
 
 	.navbar__tabs__header {

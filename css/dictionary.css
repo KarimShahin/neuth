@@ -1,0 +1,171 @@
+.dictionary {
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dictionary__title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--clr--primary);
+}
+
+.dictionary__text {
+  font-weight: 400;
+  font-size: 1.375rem;
+  color: #000;
+}
+
+.letters__tab {
+  padding: 0 2rem;
+  height: 5rem;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.letter {
+  font-family: "Montserrat",sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  height: 100%;
+  width: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.letter.active {
+  color: #fff;
+  background-color: var(--clr--primary);
+  height: 110%;
+}
+
+.tab__navigation {
+  align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.tab__prev__btn__icon {
+  transform: rotate(180deg);
+}
+
+.tab__prev__btn__icon.disabled {
+  opacity: 0.3;
+}
+
+.card {
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 4rem 2rem 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card__title {
+  position: absolute;
+  color: #fff;
+  background-color: var(--clr--primary);
+  padding: 1rem 3rem;
+  font-family: "Montserrat",sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border: 4px solid #fff;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.card__text {
+  width: 100%;
+  font-size: 1.125rem;
+  color: #707070;
+}
+
+.card__ingredients {
+  color: #000;
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.ingredients {
+  font-size: 1.125rem;
+  color: #707070;
+}
+
+.featured__in {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--clr--primary);
+  display: flex;
+  gap: 1rem;
+}
+
+.featured__in span {
+  color: #000;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card__product {
+  color: #000;
+  text-decoration: underline;
+  font-size: 1.125rem;
+}
+
+.ar .tab__navigation {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 1400px){
+  .dictionary {
+    padding-inline: 2rem;
+  }
+  .letter {
+    width: 5%;
+  }
+}
+
+@media (max-width: 1200px){
+  .letter {
+    width: 6%;
+  }
+}
+
+@media (max-width: 1000px){
+  .letter {
+    width: 7%;
+  }
+}
+
+@media (max-width: 800px){
+  :root {
+    font-size: 14px;
+  }
+  .dictionary {
+    padding-inline: 1rem;
+  }
+  .letters__tab {
+    padding-inline: 1rem;
+  }
+  .letter {
+    font-size: 1.25rem;
+  }
+
+  .card__ingredients,.featured__in {
+    flex-wrap: wrap;
+  }
+}

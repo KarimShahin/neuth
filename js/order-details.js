@@ -5,6 +5,9 @@ const cancelBtn = document.querySelector(".cancel__btn");
 const cancelModal = document.querySelector(".cancel__modal__container");
 const cancelModalInner = document.querySelector(".cancel__modal");
 const noBtn = document.querySelector(".no__btn");
+// const rateBtn = document.querySelector(".rate__btn")
+// const rateModal = document.querySelector(".rate__modal__container");
+// const rateModalInner = document.querySelector(".rate__modal");
 
 function toogleDropmenu(index) {
   if (dropmenuBodies[index].classList.contains("open__body")) {
@@ -33,3 +36,17 @@ noBtn.addEventListener("click", () => {
 })
 
 cancelModalInner.addEventListener("click",(e)=> e.stopPropagation())
+
+rateBtn.addEventListener("click", () => {
+  rateModal.classList.replace("close", "open__body")
+})
+
+rateModal.addEventListener("click", () => {
+  cancelModal.classList.replace("open__body","close")
+})
+
+noBtn.addEventListener("click", () => {
+  cancelModal.classList.replace("open__body","close")
+})
+
+rateModalInner.addEventListener("click",(e)=> e.stopPropagation())

@@ -92,15 +92,15 @@ closeSearchBar.addEventListener("click", (e) => {
   searchBar.blur()
 })
 
-language.addEventListener("click", () => {
-  if (document.documentElement.classList.contains("ar")) {
-    document.documentElement.classList.replace("ar","en")  
-  } else {
-    document.documentElement.classList.replace("en","ar")  
-  }
-  // if (document.dir !== "rtl") {
-  //   document.dir = "rtl"
-  // } else {
-  //   document.dir = ""
-  // }
-})
+// language.addEventListener("click", () => {
+//   if (document.documentElement.classList.contains("ar")) {
+//     document.documentElement.classList.replace("ar","en")  
+//   } else {
+//     document.documentElement.classList.replace("en","ar")  
+//   }
+//   // if (document.dir !== "rtl") {
+//   //   document.dir = "rtl"
+//   // } else {
+//   //   document.dir = ""
+//   // }
+// })
