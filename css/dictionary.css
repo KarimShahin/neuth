@@ -26,6 +26,10 @@
   /* align-items: center; */
 }
 
+.section__two {
+  display: none;
+}
+
 .letter {
   font-family: "Montserrat",sans-serif;
   font-size: 1.5rem;
@@ -56,6 +60,9 @@
 }
 
 .tab__prev__btn__icon.disabled {
+  opacity: 0.3;
+}
+.tab__next__btn__icon.disabled {
   opacity: 0.3;
 }
 
