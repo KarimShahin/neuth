@@ -4,7 +4,8 @@ const menu = ["1","2","3","4","5","6","7"]
 const plusBtn = document.querySelector(".plus__btn");
 const minusBtn = document.querySelector(".minus__btn");
 const productCount = document.querySelector(".product__count");
-
+const radioBtns = document.querySelectorAll(".radio__btn")
+const productSizeAction = document.querySelectorAll(".product__size__action")
 const swiper = new Swiper('.swiper', {
   // Default parameters
   slidesPerView: 1,
@@ -129,4 +130,12 @@ plusBtn.addEventListener("click",()=>productCount.value = Number(productCount.va
 minusBtn.addEventListener("click", () => {
   if(Number(productCount.value) > 1)
   productCount.value = Number(productCount.value) - 1
+})
+
+productSizeAction.forEach((action, index) => {
+  action.addEventListener("click", () => {
+    productSizeAction.forEach(action=>action.classList.remove("selected"))
+    action.classList.add("selected")
+    action.children[0].checked = true
+  })
 })

@@ -845,6 +845,10 @@ progress::-webkit-progress-value {
 	border-color: var(--clr--primary);
 }
 
+.radio__btn {
+	display: none;
+}
+
 @media (max-width: 1800px) {
 	.product-details {
 		padding-inline: 5rem;
