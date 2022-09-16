@@ -61,6 +61,13 @@
 
 .best-seller__header__action {
   align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.ar .best-seller__header__action img {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 1400px) {
