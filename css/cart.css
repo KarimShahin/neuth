@@ -386,9 +386,21 @@ option {
 	transform: translateX(-3rem);
 }
 
+.swiper-rtl .swiper-button-next {
+	left: 0;
+	right: auto;
+	transform: translateX(3rem);
+}
+
 .swiper-button-prev {
 	left: 0;
 	transform: translateX(3rem);
+}
+
+.swiper-rtl .swiper-button-prev {
+	right: 0;
+	left: auto;
+	transform: translateX(-3rem);
 }
 
 .swiper-button-next::after {
@@ -403,6 +415,19 @@ option {
 	left: 50%;
 	transform: translateX(-60%);
 	z-index: 100;
+}
+
+.swiper-rtl .swiper-button-next::after {
+	left: 50%;
+	right: auto;
+	transform: translateX(-60%);
+}
+
+
+.swiper-rtl .swiper-button-prev::after {
+	right: 50%;
+	left: auto;
+	transform: translateX(60%);
 }
 
 .best-seller__card {
