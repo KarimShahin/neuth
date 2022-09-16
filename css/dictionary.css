@@ -128,6 +128,7 @@
 
 .ar .tab__navigation {
   flex-direction: row-reverse;
+  transform: scaleX(-1);
 }
 
 @media (max-width: 1400px){
