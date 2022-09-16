@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="en" lang="en">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -429,10 +429,23 @@
 				</p>
 				<a class="btn start__now__btn">Start Now</a>
 			</div>
-			<iframe class="play__iframe" src="https://www.google.com"></iframe>
+			<div class="wrapper">
+				<div class="container">
+					<img
+						id="wheel"
+						class="spin-wheel"
+						src="../assets/neuth icons/2 points.png"
+						alt=""
+					/>
+					<img id="spin-btn" src="../assets/neuth icons/orange-arrow.svg"></img>
+				</div>
+				<div id="final-value" style="display:none;">
+					<input type="text" id="input"/>
+				</div>
+			</div>
 		</section>
 
-		<div class="modal__container open">
+		<div class="modal__container close">
 			<section class="your__prize__modal">
 				<div class="your__prize__modal__content">
 					<h3 class="your__prize__modal__title">YOUR PRIZE</h3>
@@ -534,8 +547,13 @@
 		</footer>
 
 		<!-------------- scripts section ------------------>
-
+		<!-- Chart JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+		<!-- Chart JS Plugin for displaying text over chart -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+		<!-- Script -->
 		<script src="../js/common.js"></script>
 		<script src="../js/play.js"></script>
+		<script src="../js/script.js"></script>
 	</body>
 </html>

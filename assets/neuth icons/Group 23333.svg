@@ -426,10 +426,11 @@
     <path id="Subtraction_20" data-name="Subtraction 20" d="M224,447.993a225.648,225.648,0,0,1-45.143-4.551,222.771,222.771,0,0,1-80.1-33.7A224.652,224.652,0,0,1,17.6,311.186,222.865,222.865,0,0,1,4.551,269.14a226.18,226.18,0,0,1,0-90.286,222.769,222.769,0,0,1,33.7-80.1A224.652,224.652,0,0,1,136.807,17.6,222.872,222.872,0,0,1,178.854,4.551a226.18,226.18,0,0,1,90.286,0,222.769,222.769,0,0,1,80.1,33.7,224.652,224.652,0,0,1,81.155,98.552,222.863,222.863,0,0,1,13.052,42.046,226.182,226.182,0,0,1,0,90.286,222.77,222.77,0,0,1-33.7,80.1,224.652,224.652,0,0,1-98.552,81.155,222.856,222.856,0,0,1-42.046,13.052A225.645,225.645,0,0,1,224,447.993Zm0-426.34C112.424,21.653,21.653,112.424,21.653,224S112.424,426.34,224,426.34,426.34,335.569,426.34,224,335.569,21.653,224,21.653Z" transform="translate(-8814.018 -2217.779)" fill="#fafafa"/>
     <path id="Subtraction_22" data-name="Subtraction 22" d="M461.749,461H0V0H461.749V461ZM230.5,6.011C107.13,6.011,6.762,106.379,6.762,229.749S107.13,453.485,230.5,453.485,454.236,353.117,454.236,229.749,353.868,6.011,230.5,6.011Z" transform="translate(-8820.516 -2223.521)" fill="#fff"/>
     <path id="Subtraction_23" data-name="Subtraction 23" d="M408.373,407.71H0V0H408.373V407.709ZM203.854,5.053C94.6,5.053,5.717,93.937,5.717,203.19S94.6,401.327,203.854,401.327,401.992,312.443,401.992,203.19,313.108,5.053,203.854,5.053Z" transform="translate(-8793.827 -2196.877)" opacity="0" fill="url(#pattern)"/>
-    <g transform="matrix(1, 0, 0, 1, -8822.28, -2223.52)" filter="url(#Ellipse_2471)">
+    <!-- <g transform="matrix(1, 0, 0, 1, -8822.28, -2223.52)" filter="url(#Ellipse_2471)">
       <circle id="Ellipse_2471-2" data-name="Ellipse 2471" cx="28.478" cy="28.478" r="28.478" transform="translate(204.16 202.4)" fill="#fff"/>
     </g>
-    <path id="Union_7" data-name="Union 7" d="M-19844.041-8105.266a22.41,22.41,0,0,1,4.434-13.42l-8.967-26.44,22.26,17.855a22.6,22.6,0,0,1,4.783-.51,22.517,22.517,0,0,1,22.516,22.516,22.517,22.517,0,0,1-22.516,22.516A22.512,22.512,0,0,1-19844.041-8105.266Z" transform="translate(11231.51 6112.898)" fill="#f28b2e"/>
+    <path id="Union_7" data-name="Union 7" d="M-19844.041-8105.266a22.41,22.41,0,0,1,4.434-13.42l-8.967-26.44,22.26,17.855a22.6,22.6,0,0,1,4.783-.51,22.517,22.517,0,0,1,22.516,22.516,22.517,22.517,0,0,1-22.516,22.516A22.512,22.512,0,0,1-19844.041-8105.266Z" transform="translate(11231.51 6112.898)" fill="#f28b2e"/> -->
+    <!-- small white dots -->
     <g id="Group_23327" data-name="Group 23327" transform="translate(-8592.686 -2179.466)">
       <g transform="matrix(1, 0, 0, 1, -229.59, -44.06)" filter="url(#Ellipse_2475)">
         <ellipse id="Ellipse_2475-43" data-name="Ellipse 2475" cx="4.563" cy="4.563" rx="4.563" ry="4.563" transform="translate(229.59 44.06)" fill="#fff9dc"/>
@@ -453,6 +454,7 @@
         <ellipse id="Ellipse_2475-49" data-name="Ellipse 2475" cx="4.563" cy="4.563" rx="4.563" ry="4.563" transform="translate(229.59 180.75)" fill="#fff9dc"/>
       </g>
     </g>
+    <!-- small white dots -->
     <g id="Group_23328" data-name="Group 23328" transform="translate(-8430.815 -2091.525) rotate(60)">
       <g transform="matrix(0.5, -0.87, 0.87, 0.5, -310.04, 273.02)" filter="url(#Ellipse_2475-8)">
         <ellipse id="Ellipse_2475-50" data-name="Ellipse 2475" cx="4.563" cy="4.563" rx="4.563" ry="4.563" transform="translate(391.46 132) rotate(60)" fill="#fff9dc"/>
@@ -476,6 +478,7 @@
         <ellipse id="Ellipse_2475-56" data-name="Ellipse 2475" cx="4.563" cy="4.563" rx="4.563" ry="4.563" transform="translate(273.08 200.34) rotate(60)" fill="#fff9dc"/>
       </g>
     </g>
+    <!-- small white dots -->
     <g id="Group_23331" data-name="Group 23331" transform="translate(-8624.461 -2018.615) rotate(120)">
       <g transform="matrix(-0.5, -0.87, 0.87, -0.5, -78.55, 273.77)" filter="url(#Ellipse_2475-15)">
         <ellipse id="Ellipse_2475-57" data-name="Ellipse 2475" cx="4.563" cy="4.563" rx="4.563" ry="4.563" transform="translate(79.43 136.56) rotate(120)" fill="#fff9dc"/>
@@ -499,6 +502,7 @@
         <ellipse id="Ellipse_2475-63" data-name="Ellipse 2475" cx="4.563" cy="4.563" rx="4.563" ry="4.563" transform="translate(197.82 204.91) rotate(120)" fill="#fff9dc"/>
       </g>
     </g>
+    <!-- small white dots -->
     <g id="Group_23329" data-name="Group 23329" transform="translate(-8424.734 -1903.184) rotate(120)">
       <g transform="matrix(-0.5, -0.87, 0.87, -0.5, -78.65, 504.45)" filter="url(#Ellipse_2475-22)">
         <ellipse id="Ellipse_2475-64" data-name="Ellipse 2475" cx="4.563" cy="4.563" rx="4.563" ry="4.563" transform="translate(397.54 320.34) rotate(120)" fill="#fff9dc"/>
@@ -522,6 +526,7 @@
         <ellipse id="Ellipse_2475-70" data-name="Ellipse 2475" cx="4.563" cy="4.563" rx="4.563" ry="4.563" transform="translate(279.16 251.99) rotate(120)" fill="#fff9dc"/>
       </g>
     </g>
+    <!-- small white dots -->
     <g id="Group_23332" data-name="Group 23332" transform="translate(-8630.543 -1976.094) rotate(60)">
       <g transform="matrix(0.5, -0.87, 0.87, 0.5, -310.15, 42.33)" filter="url(#Ellipse_2475-29)">
         <ellipse id="Ellipse_2475-71" data-name="Ellipse 2475" cx="4.563" cy="4.563" rx="4.563" ry="4.563" transform="translate(73.35 315.77) rotate(60)" fill="#fff9dc"/>
@@ -545,6 +550,7 @@
         <ellipse id="Ellipse_2475-77" data-name="Ellipse 2475" cx="4.563" cy="4.563" rx="4.563" ry="4.563" transform="translate(191.73 247.43) rotate(60)" fill="#fff9dc"/>
       </g>
     </g>
+    <!-- small white dots -->
     <g id="Group_23330" data-name="Group 23330" transform="translate(-8583.559 -1804.301) rotate(180)">
       <g transform="matrix(-1, 0, 0, -1, 238.72, 419.22)" filter="url(#Ellipse_2475-36)">
         <ellipse id="Ellipse_2475-78" data-name="Ellipse 2475" cx="4.563" cy="4.563" rx="4.563" ry="4.563" transform="translate(238.72 419.22) rotate(180)" fill="#fff9dc"/>
@@ -568,6 +574,7 @@
         <ellipse id="Ellipse_2475-84" data-name="Ellipse 2475" cx="4.563" cy="4.563" rx="4.563" ry="4.563" transform="translate(238.72 282.53) rotate(180)" fill="#fff9dc"/>
       </g>
     </g>
+    <!-- small orange dots -->
     <g transform="matrix(1, 0, 0, 1, -8822.28, -2223.52)" filter="url(#Ellipse_2476)">
       <ellipse id="Ellipse_2476-2" data-name="Ellipse 2476" cx="8.36" cy="8.36" rx="8.36" ry="8.36" transform="translate(225.79 8.36)" fill="#f28b2e"/>
     </g>
