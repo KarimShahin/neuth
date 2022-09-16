@@ -92,6 +92,10 @@
 	cursor: pointer;
 }
 
+.ar .play__btn img{
+	transform: rotate(180deg);
+}
+
 .play__icon {
 	width: 20px;
 }

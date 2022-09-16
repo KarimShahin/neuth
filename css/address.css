@@ -257,6 +257,11 @@
 	font-size: 1.125rem;
 }
 
+.ar .coupon__applied{
+	left: 1rem;
+	right: auto;
+}
+
 .portion__title {
 	padding-block-end: 1rem;
 	display: flex;
@@ -353,6 +358,10 @@
 
 .right__arrow__icon {
   transform: rotate(90deg) scale(1.25);
+}
+
+.ar .right__arrow__icon {
+	transform: rotate(270deg) scale(1.25);
 }
 
 .open {
