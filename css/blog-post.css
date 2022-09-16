@@ -88,8 +88,18 @@
 	gap: 1rem;
 }
 
+.ar .category {
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
 .category__img {
 	transform: rotate(90deg);
+	scale: 1.1;
+}
+
+.ar .category__img {
+	transform: rotate(270deg);
 	scale: 1.1;
 }
 
