@@ -24,11 +24,23 @@
 	padding-left: 2rem;
 	padding-bottom: 3rem;
 }
+.ar .address__step {
+	padding-right: 2rem;
+	padding-left: 0;
+}
 
 .address__step:not(:last-child) {
 	border-left: 1px dashed #f28b2e;
 }
 .address__step:not(:first-child) {
+	border-color: #cccccc;
+}
+
+.ar .address__step:not(:last-child) {
+	border-right: 1px dashed #f28b2e;
+	border-left: 0;
+}
+.ar .address__step:not(:first-child) {
 	border-color: #cccccc;
 }
 
@@ -42,6 +54,10 @@
 	background-color: #fff;
 	border-radius: 100%;
 	border: 5px solid #f28b2e;
+}
+.ar .address__step:before {
+	left: auto;
+	right: -0.75rem;
 }
 
 .address__step:not(:first-child):before {

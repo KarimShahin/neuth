@@ -12,6 +12,10 @@
   display: flex;
   flex-direction: column;
 }
+.ar .order__confirm__steps {
+  padding-right: 2rem;
+  padding-left: 0;
+}
 
 .order__confirm__step {
   position: relative;
@@ -22,9 +26,17 @@
   padding-left: 2rem;
   padding-bottom: 3rem;
 }
+.ar .order__confirm__step {
+  padding-right: 2rem;
+  padding-left: 0;
+}
 
 .order__confirm__step:not(:last-child) {
   border-left: 1px dashed #F28B2E;
+}
+.ar .order__confirm__step:not(:last-child) {
+  border-right: 1px dashed #F28B2E;
+  border-left: 0;
 }
 
 .order__confirm__step:before {
@@ -37,6 +49,10 @@
   background-color: #fff;
   border-radius: 100%;
   border: 5px solid #F28B2E;
+}
+.ar .order__confirm__step:before {
+  right: -0.75rem;
+  left: auto;
 }
 
 .order__confirm__step__title {
