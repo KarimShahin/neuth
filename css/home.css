@@ -465,6 +465,11 @@
 	left: 10%;
 }
 
+.ar .video__content {
+	right: 10%;
+	left: auto;
+}
+
 .video__text {
 	width: 75%;
 	font-size: 1.625rem;
@@ -481,9 +486,18 @@
 	margin-top: 4rem;
 }
 
+.ar .video__play__container {
+	flex-direction: row-reverse;
+	justify-content: right;
+}
+
 .video__play__btn {
 	width: 50px;
 	aspect-ratio: 1;
+}
+
+.ar .video__play__btn {
+	transform: rotate(180deg);
 }
 
 .zero {

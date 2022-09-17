@@ -72,7 +72,7 @@
 }
 
 .default__address .address__text {
-  width: 25%;
+  width: 35%;
 }
 
 .more__icon__container {
@@ -127,6 +127,12 @@
   right: 0;
   cursor: initial;
   transform: translate(-0.5rem,1rem);
+}
+
+.ar .address__modal {
+  left: 0;
+  right: auto;
+  transform: translate(0.5rem,1rem);
 }
 
 .address__modal__action {

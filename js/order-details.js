@@ -37,16 +37,16 @@ noBtn.addEventListener("click", () => {
 
 cancelModalInner.addEventListener("click",(e)=> e.stopPropagation())
 
-rateBtn.addEventListener("click", () => {
-  rateModal.classList.replace("close", "open__body")
-})
+// rateBtn.addEventListener("click", () => {
+//   rateModal.classList.replace("close", "open__body")
+// })
 
-rateModal.addEventListener("click", () => {
-  cancelModal.classList.replace("open__body","close")
-})
+// rateModal.addEventListener("click", () => {
+//   cancelModal.classList.replace("open__body","close")
+// })
 
-noBtn.addEventListener("click", () => {
-  cancelModal.classList.replace("open__body","close")
-})
+// noBtn.addEventListener("click", () => {
+//   cancelModal.classList.replace("open__body","close")
+// })
 
-rateModalInner.addEventListener("click",(e)=> e.stopPropagation())
+// rateModalInner.addEventListener("click",(e)=> e.stopPropagation())

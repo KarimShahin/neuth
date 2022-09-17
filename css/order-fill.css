@@ -91,6 +91,11 @@
 	border-radius: 5px;
 }
 
+.ar .order::before {
+	right: 0;
+	left: auto;
+}
+
 .order__id,
 .order__date,
 .order__state,
@@ -156,6 +161,15 @@
 .order__date,
 .order__action__icon__container {
 	text-align: right;
+}
+
+.ar .order__date,
+.ar .order__action__icon__container {
+	text-align: left;
+}
+
+.ar .order__action__icon {
+	transform: rotate(180deg);
 }
 
 .active__tab {

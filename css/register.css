@@ -31,6 +31,10 @@
   cursor: pointer;
 }
 
+.ar .register__tab {
+  text-align: right;
+}
+
 .register__tab:last-child {
   text-align: center;
 }
@@ -64,6 +68,10 @@
   padding-right: 10%;
   gap: 1rem;
 }
+.ar .login__form {
+  padding-left: 10%;
+  padding-right: 0;
+}
 
 .signup__form {
   width: 50%;
@@ -73,6 +81,9 @@
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+}
+.ar .signup__form {
+  padding-inline: 1rem 3rem;
 }
 
 .phone__container,

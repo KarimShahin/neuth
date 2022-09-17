@@ -87,6 +87,11 @@
 	left: auto !important;
 }
 
+.swiper-rtl .swiper-scrollbar {
+	right: auto !important;
+	left: 5.6% !important;
+}
+
 .swiper-scrollbar-drag {
 	background: var(--clr--primary) !important;
 }

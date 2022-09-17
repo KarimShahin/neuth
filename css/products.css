@@ -68,8 +68,16 @@
 	transform: rotate(90deg);
 }
 
+.ar .shop__swiper .button-next {
+	transform: rotate(270deg);
+}
+
 .shop__swiper .button-prev {
 	transform: rotate(-90deg);
+}
+
+.ar .shop__swiper .button-prev {
+	transform: rotate(-270deg);
 }
 
 .best-seller__card {

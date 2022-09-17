@@ -51,6 +51,10 @@
 	scale: 0.35;
 }
 
+.ar .breadcrumb__icon {
+	transform: rotate(270deg);
+}
+
 .breadcrumb__link {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
@@ -126,6 +130,10 @@
 
 .dropmenu__icon {
 	transform: rotate(90deg);
+}
+
+.ar .dropmenu__icon {
+	transform: rotate(270deg);
 }
 
 .dropmenu__body {
@@ -258,6 +266,10 @@
 }
 
 .open__icon {
+	transform: rotate(180deg);
+}
+
+.ar .open__icon {
 	transform: rotate(180deg);
 }
 
