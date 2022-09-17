@@ -170,6 +170,10 @@
 	width: 20px;
 }
 
+.ar .best-seller__header__action > .icon {
+	transform: rotate(180deg);
+}
+
 .best-seller__slider {
 	width: 100%;
 	margin-top: 2rem;
