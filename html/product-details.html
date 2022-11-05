@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="ar" lang="en">
+<html class="" lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -437,6 +437,12 @@
 				/>
 				<a href="" class="bread-crumb__link current">Hand Cream</a>
 			</div>
+			<!-- counter -->
+			<div class="counter">
+				<span class="hours"></span> hr : <span class="minutes"></span> min :
+				<span class="seconds"></span> sec
+			</div>
+
 			<div class="product-details__body">
 				<div class="product__images__slider">
 					<div class="swiper">
@@ -447,6 +453,7 @@
 									src="../assets/neuth icons/hand-495x400-removebg-preview.png"
 									class="product__img"
 								/>
+								<p class="discount__popup">15%</p>
 							</div>
 							<div class="swiper-slide">
 								<img
@@ -2293,5 +2300,31 @@
 
 		<script src="../js/common.js"></script>
 		<script src="../js/product-details.js"></script>
+		<!-- counter script -->
+		<script>
+			const hoursContainer = document.querySelector('.counter .hours');
+			const minutesContainer = document.querySelector('.counter .minutes');
+			const secondsContainer = document.querySelector('.counter .seconds');
+			let date_future = new Date('2023-11-17');
+			setInterval(() => {
+				let date_now = new Date();
+				let seconds = Math.floor((date_future - date_now) / 1000);
+				let minutes = Math.floor(seconds / 60);
+				let hours = Math.floor(minutes / 60);
+
+				minutes = minutes - hours * 60;
+				seconds = seconds - hours * 60 * 60 - minutes * 60;
+				console.log(hours, minutes, seconds);
+				hoursContainer.textContent = `${
+					String(hours).length > 1 ? hours : '0' + hours
+				}`;
+				minutesContainer.textContent = `${
+					String(minutes).length > 1 ? minutes : '0' + minutes
+				}`;
+				secondsContainer.textContent = `${
+					String(seconds).length > 1 ? seconds : '0' + seconds
+				}`;
+			}, 1000);
+		</script>
 	</body>
 </html>
